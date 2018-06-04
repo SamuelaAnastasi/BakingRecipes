@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_widget_layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/widget_margin"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/widget_img_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/ctn_desc_recipe_image"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/nutella_pie" />
+
+        <TextView
+            android:id="@+id/recipe_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorAccentTransparent"
+            android:gravity="end"
+            android:paddingBottom="4dp"
+            android:paddingEnd="@dimen/widget_header_padding"
+            android:paddingLeft="@dimen/widget_header_padding"
+            android:paddingRight="@dimen/widget_header_padding"
+            android:paddingStart="@dimen/widget_header_padding"
+            android:paddingTop="4dp"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/black"
+            tools:text="Cheesecake" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="#ccDEDFDE"
+        android:paddingBottom="4dp"
+        android:paddingEnd="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"
+        android:text="@string/ingredients_label"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/widget_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aaDEDFDE" />
+
+</LinearLayout>

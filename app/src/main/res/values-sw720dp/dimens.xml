@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="exoplayerHeight">480dp</dimen>
+    <dimen name="stepDescrPaddingVertical">16dp</dimen>
+    <dimen name="appBarHeight">480dp</dimen>
+    <dimen name="ingredientListItemHeight">120dp</dimen>
+    <dimen name="ingredientIconHeight">72dp</dimen>
+    <dimen name="listItemRootPadding">8dp</dimen>
+    <dimen name="listIconMarginVertical">24dp</dimen>
+    <dimen name="listItemPaddingVertical">8dp</dimen>
+    <dimen name="listItemPaddingHorizontal">32dp</dimen>
+    <dimen name="ingrStepPaddingVertical">48dp</dimen>
+    <dimen name="recipeLabelPaddingVertical">56dp</dimen>
+    <dimen name="mainToolbarHeight">148dp</dimen>
+    <dimen name="listItemPaddingTop">4dp</dimen>
+    <dimen name="ingredientItemPaddingTop">0dp</dimen>
+    <dimen name="stepListItemHeight">120dp</dimen>
+    <dimen name="stepsVideoButtonsHeight">64dp</dimen>
+    <dimen name="stepCountPadding">24dp</dimen>
+    <dimen name="stepFragmentPaddingLeft">32dp</dimen>
+    <dimen name="stepFragmentPaddingHorizontal">28dp</dimen>
+    <dimen name="stepFragLabelPaddingBottom">24dp</dimen>
+    <dimen name="stepFragLabelPaddingTop">32dp</dimen>
+    <dimen name="phoneToolBarHeight">96dp</dimen>
+    <dimen name="expandedTitleMarginStart">24dp</dimen>
+    <dimen name="no_internet_icon_margin_top">300dp</dimen>
+    <dimen name="no_internet_head_size">36sp</dimen>
+    <dimen name="no_internet_subhead_margin_bottom">560dp</dimen>
+    <dimen name="no_internet_subhead_text_size">22sp</dimen>
+</resources>

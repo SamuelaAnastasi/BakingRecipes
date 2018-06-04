@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Baking Recipes</string>
+
+    <!--  -->
+    <string name="ingredients_label">Ingredients</string>
+    <string name="directions_label">Directions</string>
+    <string name="step_string_format">"%1$d / %2$d"</string>
+    <string name="instructions_label">Instructions</string>
+    <string name="main_activity_title">Baking Recipes</string>
+    <string name="error_data_load">An error occurred in retrieving data</string>
+    <string name="error_data_conversion">Error converting data from API</string>
+    <string name="ctn_desc_recipe_image">recipe image</string>
+    <string name="step_label">Step</string>
+    <string name="ctn_desc_previous_button">previous button</string>
+    <string name="ctn_desc_next_button">next button</string>
+    <string name="ctn_desc_ingredients_icon">ingredients icon</string>
+    <string name="ctn_desc_no_internet_icon">no internet icon</string>
+    <string name="no_internet_message">Oops! No internet!</string>
+    <string name="no_internet_instructions">Activate data or Wi-Fi and restart app or simply rotate the device</string>
+    <string name="ctn_desc_restaurant_icon">restaurant icon</string>
+    <string name="servings_label">Servings</string>
+    <string name="ctn_desc_arrow_down_icon">arrow down icon</string>
+    <string name="steps_label">Steps</string>
+    <string name="ctn_desc_play_icon">play icon</string>
+</resources>

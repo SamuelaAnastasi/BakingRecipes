@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_step_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTextPrimary"
+    android:orientation="vertical"
+    tools:context="com.example.android.bakingrecipes.ui.StepFragment">
+
+    <ImageView
+        android:id="@+id/iv_video_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/exoplayerHeight"
+        android:contentDescription="@string/ctn_desc_recipe_image"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        tools:src="@drawable/nutella_pie" />
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/sepv_exoplayerView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/exoplayerHeight"
+        android:focusable="true"
+        android:visibility="visible"
+        app:resize_mode="fixed_height" />
+
+    <LinearLayout
+        android:id="@+id/ll_stepIdContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/stepCountPadding"
+        android:paddingTop="@dimen/stepCountPadding">
+
+        <TextView
+            android:id="@+id/tv_stepLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_regular"
+            android:gravity="start"
+            android:paddingLeft="@dimen/stepFragmentPaddingLeft"
+            android:paddingRight="16dp"
+            android:paddingStart="@dimen/stepFragmentPaddingLeft"
+            android:text="@string/step_label"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/videoStepsTextSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_stepId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_regular"
+            android:gravity="start"
+            android:paddingRight="16dp"
+            android:text="1"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/videoStepsTextSize"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stepsVideoButtonsHeight"
+        android:background="@color/colorPrimaryLight">
+
+        <ImageButton
+            android:id="@+id/ib_previous_video"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/ctn_desc_previous_button"
+            app:srcCompat="@drawable/ic_navigate_before_48dp" />
+
+        <ImageButton
+            android:id="@+id/ib_next_video"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/ctn_desc_next_button"
+            app:srcCompat="@drawable/ic_navigate_next_48dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_viewLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackgroundLight"
+        android:fontFamily="@font/raleway_regular"
+        android:gravity="end"
+        android:paddingBottom="@dimen/stepFragLabelPaddingBottom"
+        android:paddingLeft="@dimen/stepFragmentPaddingHorizontal"
+        android:paddingRight="@dimen/stepFragmentPaddingHorizontal"
+        android:paddingTop="@dimen/stepFragLabelPaddingTop"
+        android:text="@string/instructions_label"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tv_step_longDescr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/stepDescrPaddingVertical"
+        android:paddingEnd="@dimen/stepFragmentPaddingLeft"
+        android:paddingLeft="@dimen/stepFragmentPaddingLeft"
+        android:paddingRight="@dimen/stepFragmentPaddingLeft"
+        android:paddingStart="@dimen/stepFragmentPaddingLeft"
+        android:paddingTop="@dimen/stepDescrPaddingVertical"
+        android:textSize="16sp"
+        tools:text="Add 283 grams (20 tablespoons) of butter and 243 grams (1 cup) of milk to the dry ingredients. Beat at low speed until the dry ingredients are fully moistened, using a spatula to help with the incorporation if necessary. Then beat at medium speed for 90 seconds." />
+
+</LinearLayout>

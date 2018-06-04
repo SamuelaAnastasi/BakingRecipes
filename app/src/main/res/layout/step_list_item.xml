@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_step_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/stepListItemHeight"
+    android:layout_marginBottom="2dp"
+    android:background="@drawable/step_state_color_selector"
+    android:paddingBottom="@dimen/listItemRootPadding"
+    android:paddingEnd="@dimen/listItemPaddingHorizontal"
+    android:paddingLeft="@dimen/listItemPaddingHorizontal"
+    android:paddingRight="@dimen/listItemPaddingHorizontal"
+    android:paddingStart="@dimen/listItemPaddingHorizontal">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/ingredientIconHeight"
+        android:layout_height="@dimen/ingredientIconHeight"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="@dimen/stepIconMarginTop"
+        android:contentDescription="@string/ctn_desc_play_icon"
+        app:layout_constraintEnd_toStartOf="@id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_play_icon_right" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/listItemPaddingVertical"
+        android:paddingTop="@dimen/listItemPaddingVertical"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintTop_toTopOf="@id/imageView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/shadows_into_light_res"
+                android:text="@string/step_label"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_stepNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/shadows_into_light_res"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:text="12" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_stepDescr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            tools:text="Remove from oven and cool at room temperature." />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
