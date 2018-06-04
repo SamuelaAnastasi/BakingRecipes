@@ -1,33 +1,28 @@
-# Popular Movies - Stage 2
+# Baking Recipes
 
 This project is part of [**Android Developer Nanodegree Scholarship Program**](https://www.udacity.com/google-scholarships) by
-**Udacity** and **Google**. The project's purpose is to build an app that retrieves
-movie data from The Movie Database API [TMDb](https://www.themoviedb.org/documentation/api).
+**Udacity** and **Google**. The project's purpose is to build an app that retrieves and displays recipes from provided network resource.
 ## Features
-The project presents the users a grid arrangement of movie elements each including the movie poster, title and genres. The user may choose through a _BottomNavigationView_ to retrieve either Popular or Top Rated movies.
-Selecting a movie will open a _Movie Info_ screen with more detailed
-information like: movie title, overview, release date, genres and user ratings.
-In this final part of the project the _Movie Info_ activity includes also:
-* A list of YouTube trailers with image preview that can be watched on-line.
-* A list of member reviews: Each list item is expandable on-click.
-* A FAB button to toggle `insert/delete` from a local SQLite Database.
-
-A list of all database movies and relative poster, title and genres can be retrieved through _BottomNavigationView_ Favorites button
+* App displays a list of recipes in RecyclerView and allows navigation between individual recipes and recipe steps.
+* App uses Fragments and Master-Detail Flow to create a responsive design for phones and tablets.
+* App uses ExoPlayer to display videos and initializes and releases video assets when appropriate.
+* Application makes use of Espresso to test aspects of UI.
+* Application utilizes third-party libraries to enhance the app's features.
+* App has a companion homescreen widget that displays ingredients list for the last clicked recipe.
 
 ## Screenshots
 
 ![Baking Recipes  Phone](https://raw.githubusercontent.com/SamuelaAnastasi/BakingRecipes/master/previews/preview_phone.jpg)  
 ![Baking Recipes  Tablet](https://raw.githubusercontent.com/SamuelaAnastasi/BakingRecipes/master/previews/preview_tablet.jpg)
 
-## Instructions
-After creating a free account you need to request a API KEY from [TMDb](https://www.themoviedb.org/documentation/api). For more instructions see the [API FAQs](https://www.themoviedb.org/faq/api). Then in **gradle.properties** file in your project place the API key:
-```
-    API_KEY="your_api_key"
-```
+
 ## Libraries
 The project uses the following libraries:
+* [Retrofit](http://square.github.io/retrofit/) and [GSON](https://github.com/google/gson) converter
 * [Butter Knife](http://jakewharton.github.io/butterknife/)
 * [Picasso](http://square.github.io/picasso/)
+* [Exoplayer](https://github.com/google/ExoPlayer)
+* [Espresso](https://developer.android.com/training/testing/espresso/) fo UI testing
 
 ### Project License
 This project is licensed under the [MIT Licence](https://opensource.org/licenses/MIT)
